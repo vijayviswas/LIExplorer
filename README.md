@@ -92,6 +92,7 @@ If you fed up with webview and you want to have a completely native screen then 
 </p>
 
 * REST API
+
 if **[LITokenHandler isValidToken]** returns true then you have a valid access token and you can start calling below services.
 
 <p align="center" >
