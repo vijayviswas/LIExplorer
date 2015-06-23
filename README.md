@@ -38,6 +38,5 @@ User guide.
 Sample Application.
 
 Support.
-linkedin sdk ios
-linkedin ios sdk
+
 https://sites.google.com/site/vijayviswasus/
