@@ -1,4 +1,5 @@
-# LIFramework
+# LIFramework.framework
+LIFramework.framework is a Objective C library for LinkedIn integration in iOS applications.
 
 Coming soon....
 
