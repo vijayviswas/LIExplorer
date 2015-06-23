@@ -13,9 +13,7 @@ Coming soon....
 <p align="center" >
   <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide6.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
-<p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide9.jpg" alt="Authentication" title="Authentication" width="720" height="540">
-</p>
+
 
 
 User guide
@@ -100,6 +98,9 @@ if **[LITokenHandler isValidToken]** returns true then you have a valid access t
 </p>
 <p align="center" >
   <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide8.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+</p>
+<p align="center" >
+  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide9.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 
 Get user linkedIn profile.
