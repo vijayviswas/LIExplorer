@@ -19,9 +19,11 @@ Coming soon....
 User guide
 ------------
 * Register your application with framework.
-For simulator use "TEST" key. If you want to see logs from framework then pass "Yes" value to staging. Also ensure to setup LIApplication object with client id, client secret key,redrect url, state etc. Please refer below linkedIn website.
+For simulator use "TEST" key. If you want to see logs from framework then pass "Yes" value to staging. Also ensure to setup LIApplication object with client id, client secret key,redrect url, state etc. Please refer below linkedIn website. 
 
 https://developer.linkedin.com/docs
+
+**NOTE**: [LIFramework registerKey: withApplication: staging:] should be called once so it is better to call this method in - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions.
 
 ```
 LIApplication *app=[[LIApplication alloc] init];
@@ -34,6 +36,7 @@ LIApplication *app=[[LIApplication alloc] init];
 There are various properties defined in LIApplication to specify login webview size, hide default login webview and also token is stored in NSUserdefaults by default. If you would like to store it in keychain then pass true to **storeTokenInKeyChain** property. Also ensure to pass keychain identifier.
 
 * Invoke linkedin login screen
+
 LIAuthorizationVC viewcontroller is used to autheticate to linkedIn. Check whether accesstoken is already present or not before you initialize LIAuthorizationVC because we don't need to login again if access token is already granted and is not expired. The below code opens default linkedin webview without navigation bar..
 <p align="center" >
   <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide3.jpg" alt="Authentication" title="Authentication" width="720" height="540">
@@ -163,3 +166,7 @@ Get company updates.
         }];
   ```
 There are more APIs refer **LIRestAPIHandlers** class methods for more details.
+
+*Storing token.
+
+LIFramework has the ability to store token in NSUserDefaults and Keychain. You can set this prefernce when 
