@@ -100,3 +100,64 @@ if **[LITokenHandler isValidToken]** returns true then you have a valid access t
 <p align="center" >
   <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide8.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
+
+Get user linkedIn profile.
+```
+
+        [LIRestAPIHandlers requestProfile:^(NSDictionary *dic, NSURLResponse *response) {
+            NSLog(@"%@",dic);
+            
+        } failure:^(NSError *error) {
+            
+        }];
+  ```
+Share user comments.
+```
+
+ [LIRestAPIHandlers shareComment:@"TEST API" withVisibity:LICommentVisibilityConnectionsOnly
+                    withCompletionBlock:^(NSDictionary *dic, NSURLResponse *response) {
+                        NSLog(@"%@",dic);
+                        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+                        NSLog(@"response status code: %ld", (long)[httpResponse statusCode]);
+                    } failure:^(NSError *error) {
+                        
+                    }];
+  ```
+Share with specific values.
+
+```
+
+  [LIRestAPIHandlers shareComment:@"Test APi" withTitle:@"LinkedIn Developers Resources" withDescription:@"Leverage LinkedIn's APIs to maximize engagement" withSubmittedUrl:@"https://developer.linkedin.com" withImageURL:@"" withVisibity:LICommentVisibilityConnectionsOnly withCompletionBlock:^(NSDictionary *dic, NSURLResponse *response) {
+            NSLog(@"%@",dic);
+        } failure:^(NSError *error) {
+            
+        }];
+  ```
+Company share.
+```
+[LIRestAPIHandlers shareComment:@"TEST API" forCompanyID:@"###" withVisibity:LICommentVisibilityConnectionsOnly
+                    withCompletionBlock:^(NSDictionary *dic, NSURLResponse *response) {
+                        NSLog(@"%@",dic);
+                        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+                        NSLog(@"response status code: %ld", (long)[httpResponse statusCode]);
+                    } failure:^(NSError *error) {
+                        
+                    }];
+  ```
+Get company profile.
+```
+ [LIRestAPIHandlers companyProfileForCompanyID:@"###" withCompletionBlock:^(NSDictionary *dic, NSURLResponse *response) {
+            NSLog(@"%@",dic);
+        } failure:^(NSError *error) {
+            
+        }];
+  ```
+Get company updates.
+```
+  [LIRestAPIHandlers getCompanyUpdatesForCompanyID:@"##" withCompletionBlock:^(NSDictionary *dic, NSURLResponse *response) {
+            NSLog(@"%@",dic);
+        } failure:^(NSError *error) {
+            
+        }];
+  ```
+There are more APIs refer **LIRestAPIHandlers** class methods for more details.
