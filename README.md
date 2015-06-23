@@ -11,7 +11,7 @@ Coming soon....
   <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide2.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 <p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide8.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide6.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 <p align="center" >
   <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide9.jpg" alt="Authentication" title="Authentication" width="720" height="540">
@@ -93,9 +93,10 @@ If you fed up with webview and you want to have a completely native screen then 
 
 * REST API
 if **[LITokenHandler isValidToken]** returns true then you have a valid access token and you can start calling below services.
-<p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide6.jpg" alt="Authentication" title="Authentication" width="720" height="540">
-</p>
+
 <p align="center" >
   <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide7.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+</p>
+<p align="center" >
+  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide8.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
