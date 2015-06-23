@@ -1,6 +1,7 @@
 # LIFramework.framework
 LIFramework.framework is a Objective C library for LinkedIn integration in iOS applications.
-This is lite version. This works only in simulator. Use "TEST" key to register the framework.
+
+**NOTE**: This is lite version. This works only in simulator. Use *"TEST"* key to register the framework.
 Coming soon....
 
 
