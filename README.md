@@ -33,10 +33,22 @@ Coming soon....
 </p>
 
 
-User guide.
+User guide
+------------
+* Register your application with framework.
+For simulator use "TEST" key. If you want to see logs from framework then pass "Yes" value to staging. Also ensure to setup LIApplication object with client id, client secret key,redrect url, state etc. Please refer below linkedIn website.
 
-Sample Application.
+https://developer.linkedin.com/docs
 
-Support.
+```
+LIApplication *app=[[LIApplication alloc] init];
+    app.clientId=;
+    app.clientSecret=;
+    app.redirectURL=;
+    app.state=;
+    [LIFramework registerKey:@"TEST" withApplication:app staging:YES];
+  ```
+There are various properties defined in LIApplication to specify login webview size, hide default login webview and also token is stored in NSUserdefaults by default. If you would like to store it in keychain then pass true to **storeTokenInKeyChain** property. Also ensure to pass keychain identifier.
 
-https://sites.google.com/site/vijayviswasus/
+* Invoke linkedin login screen
+
