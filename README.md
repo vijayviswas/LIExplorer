@@ -170,4 +170,11 @@ There are more APIs refer **LIRestAPIHandlers** class methods for more details.
 
 *Storing token.
 
-LIFramework has the ability to store token in NSUserDefaults and Keychain. You can set this prefernce when 
+LIFramework has the ability to store token in NSUserDefaults and Keychain. See *LIApplication* class for more details.
+
+Sample application.
+------------
+
+Support
+------------
+https://sites.google.com/site/vijayviswasus/
