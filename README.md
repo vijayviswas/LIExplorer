@@ -11,9 +11,7 @@ Coming soon....
 <p align="center" >
   <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide2.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
-<p align="center" >
-  <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide6.jpg" alt="Authentication" title="Authentication" width="720" height="540">
-</p>
+
 
 
 
@@ -176,7 +174,23 @@ There are more APIs refer **LIRestAPIHandlers** class methods for more details.
 *Storing token.
 
 LIExplorer has the ability to store token in NSUserDefaults and Keychain. See *LIApplication* class for more details.
+<p align="center" >
+  <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide6.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+</p>
 
+By default LIExplorer stores access token in NSUserDefaults. If you would like to store it in keychain then set LIApplication class property **storeTokenInKeyChain** value as true and also set **keychainIdentifier** while registering the framework in applicationdidfinishLaunch method in Appdelegate.
+
+Sample code
+```
+  LIApplication *app=[[LIApplication alloc] init];
+ ...
+ ...
+ ..
+ 
+    app.storeTokenInKeyChain=true;
+    app.keychainIdentifier=@"PROVIDE KEYCHAIN IDENTIFIER";
+    [LIExplorer registerKey:@"TEST" withApplication:app staging:YES];
+  ```
 Sample application.
 ------------
 
