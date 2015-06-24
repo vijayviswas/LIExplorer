@@ -21,7 +21,7 @@ User guide
 ------------
 * Register your application with framework.
 * 
-**NOTE**:Use *"TEST"* key to register the framework to run it in simulator. Contact me to device key.
+**NOTE**:Use *"TEST"* key to register the framework to run it in simulator. Contact me to get device key.
  
 
 For simulator use "TEST" key. If you want to see logs from framework then pass "Yes" value to staging. Also ensure to setup LIApplication object with client id, client secret key,redrect url, state etc. Please refer below linkedIn website. 
