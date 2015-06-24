@@ -1,18 +1,18 @@
-# Coming soon    LIFramework.framework
-LIFramework.framework is a Objective C library for LinkedIn integration in iOS applications. This framework doesn't have any dependency with third party libraries.
+# Coming soon    LIExplorer.framework
+LIExplorer.framework is a Objective C library for LinkedIn integration in iOS applications. This framework doesn't have any dependency with third party libraries.
 
 
 Coming soon....
 
 
 <p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide1.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+  <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide1.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 <p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide2.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+  <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide2.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 <p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide6.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+  <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide6.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 
 
@@ -28,7 +28,7 @@ For simulator use "TEST" key. If you want to see logs from framework then pass "
 
 https://developer.linkedin.com/docs
 
-**NOTE**: [LIFramework registerKey: withApplication: staging:] should be called once so it is better to call this method in - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions.
+**NOTE**: [LIExplorer registerKey: withApplication: staging:] should be called once so it is better to call this method in - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions.
 
 ```
 LIApplication *app=[[LIApplication alloc] init];
@@ -36,7 +36,7 @@ LIApplication *app=[[LIApplication alloc] init];
     app.clientSecret=;
     app.redirectURL=;
     app.state=;
-    [LIFramework registerKey:@"TEST" withApplication:app staging:YES];
+    [LIExplorer registerKey:@"TEST" withApplication:app staging:YES];
   ```
 There are various properties defined in LIApplication to specify login webview size, hide default login webview and also token is stored in NSUserdefaults by default. If you would like to store it in keychain then pass true to **storeTokenInKeyChain** property. Also ensure to pass keychain identifier.
 
@@ -44,7 +44,7 @@ There are various properties defined in LIApplication to specify login webview s
 
 LIAuthorizationVC viewcontroller is used to autheticate to linkedIn. Check whether accesstoken is already present or not before you initialize LIAuthorizationVC because we don't need to login again if access token is already granted and is not expired. The below code opens default linkedin webview without navigation bar..
 <p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide3.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+  <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide3.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 
 ```
@@ -60,7 +60,7 @@ LIAuthorizationVC viewcontroller is used to autheticate to linkedIn. Check wheth
   ```
 If you want to have a navigation bar on the top of webview then use below code.
 <p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide4.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+  <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide4.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 ```
 UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
@@ -94,7 +94,7 @@ UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0
   ```
 If you fed up with webview and you want to have a completely native screen then create a viewcontroller in xib or storyboard and dervied it from LIAuthorizationVC. See below picture.
 <p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide5.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+  <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide5.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 
 * REST API
@@ -102,13 +102,13 @@ If you fed up with webview and you want to have a completely native screen then 
 if **[LITokenHandler isValidToken]** returns true then you have a valid access token and you can start calling below services.
 
 <p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide7.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+  <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide7.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 <p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide8.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+  <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide8.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 <p align="center" >
-  <img src="https://github.com/vijayviswas/LIFramework/blob/master/Images/Slide9.jpg" alt="Authentication" title="Authentication" width="720" height="540">
+  <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide9.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
 
 Get user linkedIn profile.
@@ -174,7 +174,7 @@ There are more APIs refer **LIRestAPIHandlers** class methods for more details.
 
 *Storing token.
 
-LIFramework has the ability to store token in NSUserDefaults and Keychain. See *LIApplication* class for more details.
+LIExplorer has the ability to store token in NSUserDefaults and Keychain. See *LIApplication* class for more details.
 
 Sample application.
 ------------
