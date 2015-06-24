@@ -98,8 +98,8 @@ If you fed up with webview and you want to have a completely native screen then 
 </p>
 
 * REST API
-
-if **[LITokenHandler isValidToken]** returns true then you have a valid access token and you can start calling below services.
+Once you have authenticated to LinkedIn then you can start calling below services.
+No need to check **[LITokenHandler isValidToken]**when calling services as it is handled inside the framework. All the service methods return true if framework has valid access token.
 
 <p align="center" >
   <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide7.jpg" alt="Authentication" title="Authentication" width="720" height="540">
