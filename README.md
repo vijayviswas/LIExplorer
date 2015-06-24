@@ -1,8 +1,7 @@
-# Coming soon    LIExplorer.framework
+#LIExplorer.framework
 LIExplorer.framework is a Objective C library for LinkedIn integration in iOS applications. This framework doesn't have any dependency with third party libraries.
 
 
-Coming soon....
 
 
 <p align="center" >
