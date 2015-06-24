@@ -98,6 +98,7 @@ If you fed up with webview and you want to have a completely native screen then 
 </p>
 
 * REST API
+
 Once you have authenticated to LinkedIn then you can start calling below services.
 No need to check **[LITokenHandler isValidToken]**when calling services as it is handled inside the framework. All the service methods return true if framework has valid access token.
 
