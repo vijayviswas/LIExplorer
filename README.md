@@ -16,6 +16,8 @@ LIExplorer.framework is a Objective C library for LinkedIn integration in iOS ap
 
 User guide
 ------------
+* Download latest framework file from github release.
+* 
 * Register your application with framework.
 * 
 **NOTE**:Use *"LIExplorer_Public"* key to register the framework to run it in simulator & device. Contact me incase if you have any questions.
