@@ -1,4 +1,4 @@
-#LIExplorer.framework
+#LIExplorer.framework- Wow its free now.
 LIExplorer.framework is a Objective C library for LinkedIn integration in iOS applications. This framework doesn't have any dependency with third party libraries.
 
 
@@ -16,12 +16,14 @@ LIExplorer.framework is a Objective C library for LinkedIn integration in iOS ap
 
 User guide
 ------------
+* Download latest framework file from github release.
+* 
 * Register your application with framework.
 * 
-**NOTE**:Use *"TEST"* key to register the framework to run it in simulator. Contact me to get device key.
+**NOTE**:Use *"LIExplorer_Public"* key to register the framework to run it in simulator & device. Contact me incase if you have any questions.
  
 
-For simulator use "TEST" key. If you want to see logs from framework then pass "Yes" value to staging. Also ensure to setup LIApplication object with client id, client secret key,redrect url, state etc. Please refer below linkedIn website. 
+ If you want to see logs from framework then pass "Yes" value to staging. Also ensure to setup LIApplication object with client id, client secret key,redrect url, state etc. Please refer below linkedIn website. 
 
 https://developer.linkedin.com/docs
 
@@ -33,7 +35,7 @@ LIApplication *app=[[LIApplication alloc] init];
     app.clientSecret=;
     app.redirectURL=;
     app.state=;
-    [LIExplorer registerKey:@"TEST" withApplication:app staging:YES];
+    [LIExplorer registerKey:@"LIExplorer_Public" withApplication:app staging:YES];
   ```
 There are various properties defined in LIApplication to specify login webview size, hide default login webview and also token is stored in NSUserdefaults by default. If you would like to store it in keychain then pass true to **storeTokenInKeyChain** property. Also ensure to pass keychain identifier.
 
@@ -188,7 +190,7 @@ Sample code
  
     app.storeTokenInKeyChain=true;
     app.keychainIdentifier=@"PROVIDE KEYCHAIN IDENTIFIER";
-    [LIExplorer registerKey:@"TEST" withApplication:app staging:YES];
+    [LIExplorer registerKey:@"LIExplorer_Public" withApplication:app staging:YES];
   ```
 Sample application.
 ------------
