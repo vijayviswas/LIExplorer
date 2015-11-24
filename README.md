@@ -1,5 +1,5 @@
 #LIExplorer.framework- Wow its free now.
-LIExplorer.framework is a Objective C library for LinkedIn integration in iOS applications. This framework doesn't have any dependency with third party libraries.
+LIExplorer.framework is a BSD-licensed Objective C library for LinkedIn integration in iOS applications. This framework doesn't have any dependency with third party libraries.
 
 
 
