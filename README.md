@@ -192,6 +192,13 @@ Sample code
     app.keychainIdentifier=@"PROVIDE KEYCHAIN IDENTIFIER";
     [LIExplorer registerKey:@"LIExplorer_Public" withApplication:app staging:YES];
   ```
+Stay up to date
+------------
+Please keep your app up to date with the latest version of the SDK.
+To receive updates about new versions:
+* "Watch" this GitHub repository
+
+
 Sample application.
 ------------
 https://github.com/vijayviswas/TestLK
