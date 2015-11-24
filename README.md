@@ -195,8 +195,8 @@ Sample code
 Stay up to date
 ------------
 Please keep your app up to date with the latest version of the SDK.
-To receive updates about new versions:
-* "Watch" this GitHub repository
+
+* "Watch" this GitHub repository to receive updates about new versions.
 
 
 Sample application.
