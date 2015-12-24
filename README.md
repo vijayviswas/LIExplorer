@@ -16,7 +16,9 @@ LIExplorer.framework is a BSD-licensed Objective C library for LinkedIn integrat
 
 User guide
 ------------
-* Register and configure your application at https://www.linkedin.com/developer/apps. Make sure you setup client id, client secret ,redirect URL and provide application permissions. Please read https://developer.linkedin.com/docs/oauth2
+* Register and configure your application at https://www.linkedin.com/developer/apps. Make sure you setup client id, client secret ,redirect URL and provide application permissions. 
+* 
+* Please read  this link (https://developer.linkedin.com/docs/oauth2) before using the framework to get familiarize with authenticating linked with OAuth 2.0.
 * 
 * Download latest framework file from github release.
 * 
