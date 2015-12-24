@@ -20,7 +20,8 @@ User guide
 * 
 * Please read  this link (https://developer.linkedin.com/docs/oauth2) before using the framework to get familiarize with authenticating linked with OAuth 2.0.
 * 
-* Download latest framework file from github release.
+* Download latest framework file from github 
+[**release**] (https://github.com/vijayviswas/LIExplorer/releases).
 * 
 * Register your application with framework.
 * 
