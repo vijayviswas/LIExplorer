@@ -16,6 +16,8 @@ LIExplorer.framework is a BSD-licensed Objective C library for LinkedIn integrat
 
 User guide
 ------------
+* Register and configure your application at https://www.linkedin.com/developer/apps. Make sure you setup client id, client secret ,redirect URL and provide application permissions. Please read https://developer.linkedin.com/docs/oauth2
+* 
 * Download latest framework file from github release.
 * 
 * Register your application with framework.
@@ -23,9 +25,8 @@ User guide
 **NOTE**:Use *"LIExplorer_Public"* key to register the framework to run it in simulator & device. Contact me incase if you have any questions.
  
 
- If you want to see logs from framework then pass "Yes" value to staging. Also ensure to setup LIApplication object with client id, client secret key,redrect url, state etc. Please refer below linkedIn website. 
+ If you want to see logs from framework then pass "Yes" value to staging. 
 
-https://developer.linkedin.com/docs
 
 **NOTE**: [LIExplorer registerKey: withApplication: staging:] should be called once so it is better to call this method in - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions.
 
