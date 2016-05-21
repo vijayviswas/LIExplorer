@@ -56,7 +56,11 @@ LIAuthorizationVC viewcontroller is used to autheticate to linkedIn. Check wheth
         LIAuthorizationVC *vc=[[LIAuthorizationVC alloc]initWithSuccessBlock:^{
             [self dismissViewControllerAnimated:YES completion:nil];
         } failureBlock:^(NSError *error) {
-            
+            NSDictionary *userInfo = [error userInfo];
+            if([userInfo objectForKey:@"Url"])// This is to identify whether user has clicked on any button/links other than sign in/login button in default linkedin login page
+             {
+                 NSLog(@"User clicked on link :%@",[userInfo objectForKey:@"Url"]);
+             }
         }];
         [self presentViewController:vc animated:YES completion:nil];
     }
@@ -85,7 +89,11 @@ UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0
         LIAuthorizationVC *vc=[[LIAuthorizationVC alloc]initWithSuccessBlock:^{
             [self dismissViewControllerAnimated:YES completion:nil];
         } failureBlock:^(NSError *error) {
-            
+            NSDictionary *userInfo = [error userInfo];
+            if([userInfo objectForKey:@"Url"])// This is to identify whether user has clicked on any button/links other than sign in/login button
+             {
+                 NSLog(@"User clicked on link :%@",[userInfo objectForKey:@"Url"]);
+             }
         }];
         vc.webViewNavigationNar=navBar;
         [self presentViewController:vc animated:YES completion:nil];
