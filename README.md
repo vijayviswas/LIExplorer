@@ -204,6 +204,10 @@ Sample code
     app.keychainIdentifier=@"PROVIDE KEYCHAIN IDENTIFIER";
     [LIExplorer registerKey:@"LIExplorer_Public" withApplication:app staging:YES];
   ```
+Logout feature
+------------
+https://github.com/vijayviswas/LIExplorer/wiki/LIExplorer-logout
+
 Stay up to date
 ------------
 Please keep your app up to date with the latest version of the SDK.
