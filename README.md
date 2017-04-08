@@ -69,6 +69,7 @@ If you want to have a navigation bar on the top of webview then use below code.
 <p align="center" >
   <img src="https://github.com/vijayviswas/LIExplorer/blob/master/Images/Slide4.jpg" alt="Authentication" title="Authentication" width="720" height="540">
 </p>
+
 ```
 UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
     navBar.backgroundColor = [UIColor whiteColor];
