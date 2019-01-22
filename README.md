@@ -1,3 +1,12 @@
+
+
+#LIExplorer is going to shut down as Linkedin annouced all developers need to migrate their apps to our newest APIs and OAuth 2.0 by March 1, 2019. 
+
+
+
+
+
+
 #LIExplorer.framework- Wow its free now.
 LIExplorer.framework is a BSD-licensed Objective C library for LinkedIn integration in iOS applications. This framework doesn't have any dependency with third party libraries.
 
