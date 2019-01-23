@@ -1,6 +1,9 @@
 
 
-**LIExplorer is going to shut down as Linkedin annouced all developers need to migrate their apps to our newest APIs and OAuth 2.0 by March 1, 2019. I have uploaded the source code, free to troubleshoot or modify it. Loop me in for any modification to this library**
+**LIExplorer is going to shut down as Linkedin annouced all developers need to migrate their apps to our newest APIs and OAuth 2.0 by March 1, 2019. I have uploaded the source code, free to troubleshoot or modify it. Loop me in for any modification to this library
+
+To test the libraray, you have to run TestApp target from source project
+**
 
 
 
