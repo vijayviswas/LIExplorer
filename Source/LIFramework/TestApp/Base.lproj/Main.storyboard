@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4n-M2-rmI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Linkedin-iOS" id="7HB-bY-0FC"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uy0-Uz-RQv">
+                                <rect key="frame" x="113.5" y="203.5" width="148" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="RLA-i5-dHr"/>
+                                </constraints>
+                                <state key="normal" title="Default LinkedIn View">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartEvent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xX0-nF-Otb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6c-b2-Imu">
+                                <rect key="frame" x="48.5" y="318.5" width="278" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="mZb-gz-dda"/>
+                                </constraints>
+                                <state key="normal" title="Default LinkedIn View with navigationbar">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="OpenLiWithNavigationBar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qUt-Y6-Z7u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSt-AX-6Pd">
+                                <rect key="frame" x="143" y="489" width="89" height="30"/>
+                                <state key="normal" title="Custom view">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="OPenCustomVC:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nm0-ys-B4D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y4n-M2-rmI" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="2GY-Qw-fsP"/>
+                            <constraint firstAttribute="centerX" secondItem="xSt-AX-6Pd" secondAttribute="centerX" id="2Y7-KC-cin"/>
+                            <constraint firstAttribute="centerX" secondItem="A6c-b2-Imu" secondAttribute="centerX" id="5TB-nG-cmN"/>
+                            <constraint firstAttribute="centerY" secondItem="uy0-Uz-RQv" secondAttribute="centerY" id="7zY-tU-uLU"/>
+                            <constraint firstItem="uy0-Uz-RQv" firstAttribute="centerX" secondItem="A6c-b2-Imu" secondAttribute="centerX" id="ROu-Cv-LaD"/>
+                            <constraint firstItem="A6c-b2-Imu" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Sto-TJ-hPI"/>
+                            <constraint firstItem="xSt-AX-6Pd" firstAttribute="centerX" secondItem="y4n-M2-rmI" secondAttribute="centerX" id="V5V-bs-63i"/>
+                            <constraint firstItem="y4n-M2-rmI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="aUb-zL-7ES"/>
+                            <constraint firstItem="A6c-b2-Imu" firstAttribute="top" secondItem="uy0-Uz-RQv" secondAttribute="bottom" constant="85" id="ago-7X-S6K"/>
+                            <constraint firstAttribute="trailing" secondItem="y4n-M2-rmI" secondAttribute="trailing" id="mZs-6q-Gks"/>
+                            <constraint firstItem="xSt-AX-6Pd" firstAttribute="top" secondItem="A6c-b2-Imu" secondAttribute="bottom" constant="107" id="o8w-Ux-ve1"/>
+                            <constraint firstAttribute="centerX" secondItem="uy0-Uz-RQv" secondAttribute="centerX" id="raa-Gf-D61"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xSt-AX-6Pd" secondAttribute="bottom" constant="148" id="sjs-uG-ATZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xSt-AX-6Pd" secondAttribute="bottom" constant="148" id="vYw-3V-cpN"/>
+                            <constraint firstItem="A6c-b2-Imu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="172" id="yXs-ei-92D"/>
+                            <constraint firstItem="A6c-b2-Imu" firstAttribute="top" secondItem="uy0-Uz-RQv" secondAttribute="bottom" constant="85" id="zHr-v9-k9Y"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7zY-tU-uLU"/>
+                                <exclude reference="ROu-Cv-LaD"/>
+                                <exclude reference="ago-7X-S6K"/>
+                                <exclude reference="yXs-ei-92D"/>
+                                <exclude reference="V5V-bs-63i"/>
+                                <exclude reference="o8w-Ux-ve1"/>
+                                <exclude reference="vYw-3V-cpN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Share View Controller-->
+        <scene sceneID="Vcl-jM-HN2">
+            <objects>
+                <viewController storyboardIdentifier="ShareViewController" id="8mz-OM-Zx1" customClass="ShareViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wD6-Ka-8c2"/>
+                        <viewControllerLayoutGuide type="bottom" id="70e-cK-Shq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aCf-Mo-aZi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mh0-8T-SMd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Linkedin-iOS" id="TEt-y0-khq"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dR1-QZ-pff">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ECell" id="TEr-CV-Iia">
+                                        <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TEr-CV-Iia" id="1T9-2n-06J">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8mz-OM-Zx1" id="hgD-wn-vF7"/>
+                                    <outlet property="delegate" destination="8mz-OM-Zx1" id="ZbU-Vs-Vdt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mh0-8T-SMd" firstAttribute="leading" secondItem="wD6-Ka-8c2" secondAttribute="leading" id="6uS-XG-VGl"/>
+                            <constraint firstItem="mh0-8T-SMd" firstAttribute="top" secondItem="aCf-Mo-aZi" secondAttribute="top" id="81V-fv-Bfp"/>
+                            <constraint firstAttribute="trailing" secondItem="dR1-QZ-pff" secondAttribute="trailing" id="CeC-tm-cKF"/>
+                            <constraint firstItem="dR1-QZ-pff" firstAttribute="top" secondItem="mh0-8T-SMd" secondAttribute="bottom" id="alJ-OD-Ffo"/>
+                            <constraint firstItem="mh0-8T-SMd" firstAttribute="trailing" secondItem="wD6-Ka-8c2" secondAttribute="trailing" id="hT1-9N-mnC"/>
+                            <constraint firstItem="70e-cK-Shq" firstAttribute="top" secondItem="dR1-QZ-pff" secondAttribute="bottom" id="ngZ-FL-LQm"/>
+                            <constraint firstItem="dR1-QZ-pff" firstAttribute="leading" secondItem="aCf-Mo-aZi" secondAttribute="leading" id="snY-AV-lFa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VaW-io-tQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="129"/>
+        </scene>
+        <!--Custom View Controller-->
+        <scene sceneID="5ag-u9-07q">
+            <objects>
+                <viewController storyboardIdentifier="LIAuthorizationVC" id="OdE-fQ-P30" customClass="CustomViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FQo-O4-UtQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="OkI-gI-NPe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WEz-hl-2Ip">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ao-WC-fPZ">
+                                <rect key="frame" x="11" y="87" width="353" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylI-gG-9WV">
+                                <rect key="frame" x="18" y="133" width="339" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="V1D-E4-Zko"/>
+                                </constraints>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SubmitButtonEvent:" destination="OdE-fQ-P30" eventType="touchUpInside" id="9bo-pK-sXz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ex-Dy-fEU">
+                                <rect key="frame" x="11" y="49" width="353" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Ao-WC-fPZ" secondAttribute="trailing" constant="11" id="1BK-mF-rsu"/>
+                            <constraint firstItem="ylI-gG-9WV" firstAttribute="top" secondItem="7Ao-WC-fPZ" secondAttribute="bottom" constant="16" id="2nh-FA-ESm"/>
+                            <constraint firstItem="4Ex-Dy-fEU" firstAttribute="leading" secondItem="WEz-hl-2Ip" secondAttribute="leading" constant="11" id="5Zw-Mq-DQW"/>
+                            <constraint firstItem="ylI-gG-9WV" firstAttribute="leading" secondItem="WEz-hl-2Ip" secondAttribute="leading" constant="18" id="Oby-8U-ZgZ"/>
+                            <constraint firstItem="7Ao-WC-fPZ" firstAttribute="leading" secondItem="WEz-hl-2Ip" secondAttribute="leading" constant="11" id="WBn-Xn-e6R"/>
+                            <constraint firstItem="4Ex-Dy-fEU" firstAttribute="top" secondItem="FQo-O4-UtQ" secondAttribute="bottom" constant="29" id="fEA-aV-U9Z"/>
+                            <constraint firstAttribute="trailing" secondItem="4Ex-Dy-fEU" secondAttribute="trailing" constant="11" id="gWs-15-MvD"/>
+                            <constraint firstAttribute="trailing" secondItem="ylI-gG-9WV" secondAttribute="trailing" constant="18" id="j3J-T1-eHZ"/>
+                            <constraint firstItem="7Ao-WC-fPZ" firstAttribute="top" secondItem="4Ex-Dy-fEU" secondAttribute="bottom" constant="8" id="pKD-Mx-XIO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Email" destination="4Ex-Dy-fEU" id="Buw-cq-esA"/>
+                        <outlet property="PWD" destination="7Ao-WC-fPZ" id="OyL-jO-CVb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3D-Dx-g1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="785"/>
+        </scene>
+    </scenes>
+</document>
