@@ -20,10 +20,10 @@
     
     
     LIApplication *app=[[LIApplication alloc] init];
-    app.clientId=@"77va229xsivot8";
-    app.clientSecret=@"k1c3jhEwDeYLm6hg";
-    app.redirectURL=@"http://linkedin_oauth/success";
-    app.state=@"ENB#KJ";
+    app.clientId=@"";
+    app.clientSecret=@"";
+    app.redirectURL=@"";
+    app.state=@"";
     app.hideDefaultWebView=false;
     app.storeTokenInKeyChain=false;
     [LIExplorer registerKey:@"LIExplorer_Public" withApplication:app staging:YES];
